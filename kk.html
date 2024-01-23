@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Different Listeners Example</title>
+</head>
+<body>
+
+
+  <button id="element1">Element 1</button>
+  <button id="element2">Element 2</button>
+  <button id="element3">Element 3</button>
+  <button id="element4">Element 4</button>
+  <button id="element5">Element 5</button>
+  <button id="element6">Element 6</button>
+  <button id="element7">Element 7</button>
+
+  <script>
+    // Функции-обработчики для разных слушателей
+    function handleButtonClick1(event) {
+      alert(`Button 1 click`);
+      // Ваш код обработки события здесь
+    }
+
+    function handleButtonClick2(event) {
+      alert(`Button 2 mouseover`);
+      // Ваш код обработки события здесь
+    }
+
+    function handleButtonClick3(event) {
+      alert(`Button 3 mouseout`);
+      // Ваш код обработки события здесь
+    }
+
+    function handleButtonClick4(event) {
+      alert(`Button 4 dblclick`);
+      // Ваш код обработки события здесь
+    }
+
+    function handleButtonClick5(event) {
+      alert(`Button 5 contextmenu`);
+      // Ваш код обработки события здесь
+    }
+
+    function handleButtonClick6(event) {
+      alert(`Button 6 keypress`);
+      // Ваш код обработки события здесь
+    }
+
+    function handleButtonClick7(event) {
+      alert(`Button 7 mousedown`);
+      // Ваш код обработки события здесь
+    }
+
+    // Добавление различных слушателей к разным элементам
+    document.getElementById('element1').addEventListener('click', handleButtonClick1);
+    document.getElementById('element2').addEventListener('mouseover', handleButtonClick2);
+    document.getElementById('element3').addEventListener('mouseout', handleButtonClick3);
+    document.getElementById('element4').addEventListener('dblclick', handleButtonClick4);
+    document.getElementById('element5').addEventListener('contextmenu', handleButtonClick5);
+    document.getElementById('element6').addEventListener('keypress', handleButtonClick6);
+    document.getElementById('element7').addEventListener('mousedown', handleButtonClick7);
+  </script>
+
+<style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  
+    button {
+      margin: 10px;
+      background-color: yellow;
+      color: black; /* Чтобы текст был виден на желтом фоне */
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+
+
+
+</body>
+</html>
